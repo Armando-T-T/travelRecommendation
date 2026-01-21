@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rumbo Ideal | Travel Recommendations</title>
+  <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+
+<body>
+
+  <!-- NAV BAR (Home includes search) -->
+  <nav class="navbar">
+    <a href="travel_recommendation.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+
+    <form class="search-form" id="searchForm">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search: beach, temple, or country..."
+        autocomplete="off"
+      />
+      <button type="button" id="searchBtn">Search</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </form>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="home-content">
+      <h1>Rumbo Ideal</h1>
+      <p>
+        Rumbo Ideal is a travel recommendation platform designed to help users discover
+        amazing destinations around the world based on their interests and preferences.
+      </p>
+
+      <!-- Results (shown only after Search) -->
+      <div id="results" class="results"></div>
+    </div>
+  </section>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
